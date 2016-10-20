@@ -16,17 +16,17 @@ namespace Civil_War_Ireland
         {
 
         }
-        public Counties(int countyID, String countyName, Province province)
+        public Counties(int countyID, String countyName)
         {
             setCountyID(countyID);
             setCountyName(countyName);
-            setProvince(province);
+            setProvince(countyID);
 
         }
 
-        private void setProvince(Province province)
+        private void setProvince(int countyID)
         {
-            this.province = province;
+           // this.province = province;
         }
 
         private void setCountyName(string countyName)
