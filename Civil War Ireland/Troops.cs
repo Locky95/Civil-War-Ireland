@@ -29,31 +29,23 @@ namespace Civil_War_Ireland
         {
             this.playerID = playerID;
         }
-        int getPlayerTroops()
+        public int getPlayerTroops()
         {
             return playerTroops;
         }
-        int getPlayerID()
+        public int getPlayerID()
         {
             return playerID;
         }
 
-        /*void setGoldCap()
-        {
-            the code used to set the upper limit of the gold the player can have
-            should be placed in here.the upper limit is decided based on how many counties the player owns.
-        }
+        /*
 
         /*void purchasePlayerTroopsUsingPlayerGold()
         {
             the code to purchase player troops using the players gold should be put in here
         }*/
 
-        /*void sendTroopsToBattle()
-        {
-            the code to decide how many troops to send to battle should be placed in here
-
-        }
-        */
+       
+        
     }
 }

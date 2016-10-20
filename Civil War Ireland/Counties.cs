@@ -9,7 +9,7 @@ namespace Civil_War_Ireland
     class Counties
     {
         int countyID;
-        enum Province {Leinster,Munster,Ulster,Connaught};
+        enum Province { Leinster, Munster, Ulster, Connaught };
         String countyName;
 
         public Counties()
@@ -24,19 +24,33 @@ namespace Civil_War_Ireland
 
         }
 
-        private void setProvince(int countyID)
+        void setProvince(int countyID)
         {
-           // this.province = province;
+            // this.province = province;
+            // the countyID should be used to pick the province 
         }
 
-        private void setCountyName(string countyName)
+        void setCountyName(string countyName)
         {
-            throw new NotImplementedException();
+            this.countyName = countyName;
         }
 
-        private void setCountyID(int countyID)
+        void setCountyID(int countyID)
         {
-            throw new NotImplementedException();
+            this.countyID = countyID;
         }
+        void getProvince()
+        {
+            //void for now till we sort out the set code
+        }
+        int getCountyID()
+        {
+            return countyID;
+        }
+        String getCountyName()
+        {
+            return countyName;
+        }
+
     }
 }
