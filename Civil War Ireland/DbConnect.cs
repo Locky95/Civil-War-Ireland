@@ -11,7 +11,7 @@ namespace Prototype
     {
 
 
-       // public const String oradb = "Data Source=Oracle;User Id = ;Password = ;";
+        public const String oradb = "Data Source=Oracle;User Id =t00182938;Password =j6iqiwyq;";
        // public const String oradb = "Data Source=Oracle;User Id = ;Password = ;";
 
 
