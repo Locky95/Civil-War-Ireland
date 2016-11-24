@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prototype
+namespace Civil_War_Ireland
 {
     class DbConnect
     {
