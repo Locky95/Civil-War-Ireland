@@ -12,9 +12,15 @@ namespace Civil_War_Ireland
 {
     public partial class Login_Screen : Form
     {
+        Player player = new Player();
         public Login_Screen()
         {
             InitializeComponent();
+        }
+
+        private void btnAddPlayer_Click(object sender, EventArgs e)
+        {
+            player = player.createPlayer();
         }
     }
 }

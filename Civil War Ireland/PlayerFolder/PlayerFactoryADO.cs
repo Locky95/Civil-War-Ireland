@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Civil_War_Ireland.Player
+namespace Civil_War_Ireland
 {
-    class PlayerFactoryADO
+    public class PlayerFactoryADO 
     {
         int playerID = 0;
         String inGameStatus;
         public PlayerFactoryADO()
         {
-
+            getPlayerADO();
         }
-        public PlayerADO getPlayerADO()
+        public void getPlayerADO()
         {
             PlayerADO player = new PlayerOracleADO();
             playerID = player.getNextPlayerId();
             inGameStatus = player.setPlayerInGameStatus(playerID);
 
-            player.createPlayer(playerID, 000, inGameStatus);
-            return player;
+           // player.createPlayer(playerID, 000, inGameStatus);
+         
         }
     }
 }
