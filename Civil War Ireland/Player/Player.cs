@@ -10,20 +10,20 @@ namespace Civil_War_Ireland
     {
         int playerID;
         int userID;
-        int inGamePlayerStatus;
+        String inGamePlayerStatus;
 
         public Player()
         {
 
         }
-        public Player(int playerID,int userID,int inGamePlayerStatus)
+        public Player(int playerID,int userID,String inGamePlayerStatus)
         {
             setPlayerID(playerID);
             setUserID(userID);
             setInGamePlayerStatus(inGamePlayerStatus);
         }
 
-        void setInGamePlayerStatus(int inGamePlayerStatus)
+        void setInGamePlayerStatus(String inGamePlayerStatus)
         {
             this.inGamePlayerStatus = inGamePlayerStatus;
         }
@@ -37,7 +37,7 @@ namespace Civil_War_Ireland
         {
             this.playerID = playerID;
         }
-        int getInGamePlayerStatus()
+        String getInGamePlayerStatus()
         {
             return inGamePlayerStatus;
         }
