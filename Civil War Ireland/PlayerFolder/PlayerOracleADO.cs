@@ -70,7 +70,7 @@ namespace Civil_War_Ireland
 
        
 
-        void PlayerADO.setPlayerInGameStatus(String inGameStatus,int playerID)
+        String PlayerADO.setPlayerInGameStatus(int playerID)
         {
             String inGame;
 
@@ -99,7 +99,8 @@ namespace Civil_War_Ireland
             OracleDataReader dr2 = cmd2.ExecuteReader();
 
             conn.Close();
-           
+
+            return inGame;
         }
 
        

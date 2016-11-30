@@ -66,9 +66,10 @@
     <Compile Include="Login Screen.Designer.cs">
       <DependentUpon>Login Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Player\Player.cs" />
-    <Compile Include="Player\PlayerADO.cs" />
-    <Compile Include="Player\PlayerOracleADO.cs" />
+    <Compile Include="PlayerFolder\Player.cs" />
+    <Compile Include="PlayerFolder\PlayerADO.cs" />
+    <Compile Include="PlayerFolder\PlayerFactoryADO.cs" />
+    <Compile Include="PlayerFolder\PlayerOracleADO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Troops.cs" />

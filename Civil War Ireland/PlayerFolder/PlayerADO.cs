@@ -11,7 +11,7 @@ namespace Civil_War_Ireland
        void createPlayer(int id,int userID,String inGamePlayerStatus);
         int getNextPlayerId();
         int getUserId();
-        void setPlayerInGameStatus(String inGameStatus,int playerID);
+        String setPlayerInGameStatus(int playerID);
 
     }
 }
