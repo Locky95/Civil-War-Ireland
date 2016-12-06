@@ -4,3 +4,4 @@ C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Ci
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.Login_Screen.resources
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.Properties.Resources.resources
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.csproj.GenerateResource.Cache
+C:\Users\Dclocky\Desktop\Civil-War-Ireland\Civil War Ireland\bin\Debug\Civil War Ireland.exe.config

@@ -49,10 +49,10 @@ namespace Civil_War_Ireland
         {
             return playerID;
         }
-        //public void createPlayer()
-        //{
-        //    PlayerFactoryADO player = new PlayerFactoryADO();
-        //}
+        public void createPlayer()
+        {
+            PlayerFactoryADO player = new PlayerFactoryADO();
+        }
  
     }
 }

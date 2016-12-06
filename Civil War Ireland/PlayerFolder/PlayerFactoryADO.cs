@@ -16,11 +16,8 @@ namespace Civil_War_Ireland
         }
         public void getPlayerADO()
         {
-            PlayerADO player = new PlayerOracleADO();
-            playerID = player.getNextPlayerId();
-            inGameStatus = player.setPlayerInGameStatus(playerID);
-
-           // player.createPlayer(playerID, 000, inGameStatus);
+            PlayerOracleADO player = new PlayerOracleADO();
+           
          
         }
     }

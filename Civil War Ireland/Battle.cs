@@ -19,13 +19,15 @@ namespace Civil_War_Ireland
             //the players id needs to be assigned
             //the players troops must be assigned correctly, corresponding to the players id
 
-            Player player1 = new Player(001, 001, 1);
-            int id = player1.getPlayerID();
-            Troops p1 = new Troops();
+           // Player player1 = new Player(001, 001, 1);
+           // int id = player1.getPlayerID();
+           // Troops p1 = new Troops();
+
+
             //p1.setTroops(sendTroopsToBattle);
             //p1.setPlayerID(id);
 
-            int enemyTroops =( p1.getPlayerTroops()/3 )+ 1;
+          //  int enemyTroops =( p1.getPlayerTroops()/3 )+ 1;
 
             //BattleResults(p1.getTroops, enemyTroops);
         }
@@ -36,16 +38,19 @@ namespace Civil_War_Ireland
             //the players id needs to be assigned
             //the players troops must be assigned correctly, corresponding to the players id
 
-            Player player1 = new Player(001, 001, 1);
-            int id = player1.getPlayerID();
-            Troops p1 = new Troops();
+         //   Player player1 = new Player(001, 001, 1);
+         //   int id = player1.getPlayerID();
+         //   Troops p1 = new Troops();
+
             //p1.setTroops(sendTroopsToBattle);
             //p1.setPlayerID(id);
 
 
-            Player player2 = new Player(001, 001, 1);
-            int id2 = player2.getPlayerID();
-            Troops p2 = new Troops();
+        //    Player player2 = new Player(001, 001, 1);
+          //  int id2 = player2.getPlayerID();
+           // Troops p2 = new Troops();
+
+
             //p1.setTroops(sendTroopsToBattle);
             //p1.setPlayerID(id2);
 

@@ -9,9 +9,27 @@ using System.Threading.Tasks;
 
 namespace Civil_War_Ireland
 {
+   
     class PlayerOracleADO : PlayerADO
     {
         private OracleConnection conn = new OracleConnection(DbConnect.oradb);
+        public int playerID;
+        public int userID;
+        String inGameStatus;
+
+        public PlayerOracleADO()
+        {
+            PlayerADO a = new PlayerOracleADO();
+
+            playerID = a.getNextPlayerId();
+            userID = 000;
+            inGameStatus = a.setPlayerInGameStatus(playerID);
+
+            a.createPlayer( playerID,  userID,  inGameStatus);
+
+        }
+
+       
 
         void PlayerADO.createPlayer(int id,int userID,String inGamePlayerStatus)
         {

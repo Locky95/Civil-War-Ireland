@@ -8,7 +8,7 @@ namespace Civil_War_Ireland
 {
     interface PlayerADO
     {
-       void createPlayer(int id,int userID,String inGamePlayerStatus);
+        void createPlayer(int id, int userID, String inGamePlayerStatus);
         int getNextPlayerId();
         int getUserId();
         String setPlayerInGameStatus(int playerID);
