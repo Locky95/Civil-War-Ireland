@@ -12,7 +12,8 @@ namespace Civil_War_Ireland
 {
     public partial class Login_Screen : Form
     {
-        Player player = new Player();
+        PlayerOracleADO factory = new PlayerOracleADO();
+        PlayerADO a = new PlayerOracleADO();
         public Login_Screen()
         {
             InitializeComponent();
@@ -20,7 +21,8 @@ namespace Civil_War_Ireland
 
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
-            player = player.createPlayer();
+
+            a.createPlayer(0,0,'Y');
         }
     }
 }

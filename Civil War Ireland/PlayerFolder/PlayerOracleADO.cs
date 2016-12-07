@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.OracleClient;
-
+//using Oracle.ManagedDataAccess.client;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,26 +12,20 @@ namespace Civil_War_Ireland
    
     class PlayerOracleADO : PlayerADO
     {
-        private OracleConnection conn = new OracleConnection(DbConnect.oradb);
+        
         public int playerID;
         public int userID;
         String inGameStatus;
+        PlayerADO a;
 
         public PlayerOracleADO()
         {
-            PlayerADO a = new PlayerOracleADO();
-
-            playerID = a.getNextPlayerId();
-            userID = 000;
-            inGameStatus = a.setPlayerInGameStatus(playerID);
-
-            a.createPlayer( playerID,  userID,  inGameStatus);
 
         }
 
        
 
-        void PlayerADO.createPlayer(int id,int userID,String inGamePlayerStatus)
+        void PlayerADO.createPlayer(int id,int userID,char inGamePlayerStatus)
         {
             //Create database connection string
             OracleConnection conn = new OracleConnection(DbConnect.oradb);
@@ -53,7 +47,8 @@ namespace Civil_War_Ireland
 
         int PlayerADO.getNextPlayerId()
         {
-            int NextPlayerId;
+        OracleConnection conn = new OracleConnection(DbConnect.oradb);
+        int NextPlayerId;
 
             //Define SQL query
             String strSQL = "SELECT MAX(PlayerID) FROM Player";
@@ -90,7 +85,8 @@ namespace Civil_War_Ireland
 
         String PlayerADO.setPlayerInGameStatus(int playerID)
         {
-            String inGame;
+        OracleConnection conn = new OracleConnection(DbConnect.oradb);
+        String inGame;
 
             //Define SQL query
             String strSQL = "SELECT inGameStatus FROM Player";

@@ -17,6 +17,7 @@ namespace Civil_War_Ireland
         public void getPlayerADO()
         {
             PlayerOracleADO player = new PlayerOracleADO();
+            
            
          
         }

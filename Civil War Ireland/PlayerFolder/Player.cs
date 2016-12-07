@@ -14,7 +14,7 @@ namespace Civil_War_Ireland
 
         public Player()
         {
-
+           
         }
         public Player(int playerID,int userID,String inGamePlayerStatus)
         {
@@ -51,7 +51,7 @@ namespace Civil_War_Ireland
         }
         public void createPlayer()
         {
-            PlayerFactoryADO player = new PlayerFactoryADO();
+            PlayerOracleADO player = new PlayerOracleADO();
         }
  
     }
