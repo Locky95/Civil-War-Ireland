@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Civil_War_Ireland
 {
-    public partial class Login_Screen : Form
+    public partial class frmStart_Game : Form
     {
         PlayerOracleADO factory = new PlayerOracleADO();
         PlayerADO a = new PlayerOracleADO();
-        public Login_Screen()
+        public frmStart_Game()
         {
             InitializeComponent();
         }

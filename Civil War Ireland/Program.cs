@@ -16,7 +16,7 @@ namespace Civil_War_Ireland
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_Screen());
+            Application.Run(new frmStart_Game());
         }
     }
 }
