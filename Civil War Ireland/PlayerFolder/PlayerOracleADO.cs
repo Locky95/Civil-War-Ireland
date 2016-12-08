@@ -6,6 +6,7 @@ using Oracle.ManagedDataAccess.Client;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Civil_War_Ireland
 {
@@ -30,10 +31,11 @@ namespace Civil_War_Ireland
             //Create database connection string
             OracleConnection conn = new OracleConnection(DbConnect.oradb);
 
-            String strSQL = "INSERT INTO PLAYER VALUES(" + id + "," + userID + ",'" + inGamePlayerStatus + "')";
+            String strSQL = "INSERT INTO PLAYER VALUES(" + id + ",'PLayer'," + userID + ",'" + inGamePlayerStatus + "',1,3)";
 
             //Define Oracle command
             OracleCommand cmd = new OracleCommand(strSQL, conn);
+
             //Open DB connection
             conn.Open();
 
@@ -78,7 +80,32 @@ namespace Civil_War_Ireland
 
         int PlayerADO.getUserId()
         {
-            throw new NotImplementedException();
+            OracleConnection conn = new OracleConnection(DbConnect.oradb);
+            int nextUserID;
+
+            //Define SQL query
+            String strSQL = "User_ID";
+            
+            //Define Oracle command
+            OracleCommand cmd = new OracleCommand(strSQL, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Open DB connection
+            conn.Open();
+
+            //execute
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            //read the record in dr
+            dr.Read();
+
+            if (dr.IsDBNull(0))
+                nextUserID = 1;
+            else
+                nextUserID = Convert.ToInt16(dr.GetValue(0)) + 1;
+
+            conn.Close();
+            return nextUserID;
         }
 
        

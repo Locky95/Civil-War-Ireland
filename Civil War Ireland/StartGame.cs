@@ -22,7 +22,7 @@ namespace Civil_War_Ireland
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
 
-            a.createPlayer(0,0,"Y");
+            a.createPlayer(a.getNextPlayerId(),a.getUserId(),"Y");
         }
     }
 }
