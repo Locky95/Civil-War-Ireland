@@ -12,9 +12,22 @@ namespace Civil_War_Ireland
 {
     public partial class Form1 : Form
     {
+        InGameOracleADO a = new InGameOracleADO();
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //PlayerScore.Text = ("Hello");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            PlayerScore.Text = a.viewTroops().ToString();
         }
     }
 }

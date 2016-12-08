@@ -1,7 +1,6 @@
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\Civil War Ireland.exe.config
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.csprojResolveAssemblyReference.cache
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.Form1.resources
-C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.Login_Screen.resources
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.Properties.Resources.resources
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.csproj.GenerateResource.Cache
 C:\Users\Dclocky\Desktop\Civil-War-Ireland\Civil War Ireland\bin\Debug\Civil War Ireland.exe.config
@@ -9,3 +8,4 @@ C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\Ci
 C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\Civil War Ireland.pdb
 C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.exe
 C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.pdb
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.frmStart_Game.resources

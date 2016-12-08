@@ -14,18 +14,32 @@ namespace Civil_War_Ireland
 
     class InGameOracleADO : InGameADO
     {
+        int playerTroops;
 
-
-        public void viewTroops()
+        public int viewTroops()
         {
+            
             OracleConnection conn = new OracleConnection(DbConnect.oradb);
 
-            String strSQL = "SELECT inGameStatus FROM Player";
+            String strSQL = "SELECT * FROM V_PlayerTroops";
 
             conn.Open();
             
-            OracleCommand cmd = new OracleCommand("USER_ID",conn);
-            
+            OracleCommand cmd = new OracleCommand(strSQL, conn);
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            //read the record in dr
+            dr.Read();
+
+            if (dr.IsDBNull(0))
+                playerTroops = 1;
+            else
+                playerTroops = Convert.ToInt16(dr.GetValue(0)) + 1;
+
+            conn.Close();
+
+
+            return playerTroops;
 
         }
 
@@ -35,6 +49,11 @@ namespace Civil_War_Ireland
         }
 
         public void viewCountysOwned()
+        {
+            throw new NotImplementedException();
+        }
+
+        void InGameADO.viewTroops()
         {
             throw new NotImplementedException();
         }

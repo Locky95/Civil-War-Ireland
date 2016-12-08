@@ -30,7 +30,7 @@ namespace Civil_War_Ireland
             //Create database connection string
             OracleConnection conn = new OracleConnection(DbConnect.oradb);
 
-            String strSQL = "INSERT INTO Player VALUES (" + id + "," + userID + ",'" + inGamePlayerStatus + "')";
+            String strSQL = "INSERT INTO PLAYER VALUES (" + id + "," + userID + ",'" + inGamePlayerStatus + "')";
 
             //Define Oracle command
             OracleCommand cmd = new OracleCommand(strSQL, conn);
