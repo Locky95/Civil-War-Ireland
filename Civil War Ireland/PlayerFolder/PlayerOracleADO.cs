@@ -1,8 +1,8 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Data.OracleClient;
-//using Oracle.ManagedDataAccess.client;
+//using System.Data.OracleClient;
+using Oracle.ManagedDataAccess.Client;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,12 +25,12 @@ namespace Civil_War_Ireland
 
        
 
-        void PlayerADO.createPlayer(int id,int userID,char inGamePlayerStatus)
+        void PlayerADO.createPlayer(int id,int userID,String inGamePlayerStatus)
         {
             //Create database connection string
             OracleConnection conn = new OracleConnection(DbConnect.oradb);
 
-            String strSQL = "INSERT INTO PLAYER VALUES (" + id + "," + userID + ",'" + inGamePlayerStatus + "')";
+            String strSQL = "INSERT INTO PLAYER VALUES(" + id + "," + userID + ",'" + inGamePlayerStatus + "')";
 
             //Define Oracle command
             OracleCommand cmd = new OracleCommand(strSQL, conn);

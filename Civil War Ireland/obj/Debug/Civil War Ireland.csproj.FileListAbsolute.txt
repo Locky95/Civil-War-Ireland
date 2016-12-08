@@ -9,3 +9,9 @@ C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\Ci
 C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.exe
 C:\Users\T00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil War Ireland.pdb
 C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\obj\Debug\Civil_War_Ireland.frmStart_Game.resources
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\EntityFramework.dll
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\EntityFramework.xml
+C:\Users\t00182938\Source\Repos\Civil-War-Ireland\Civil War Ireland\bin\Debug\EntityFramework.SqlServer.xml

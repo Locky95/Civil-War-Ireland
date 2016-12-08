@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.OracleClient;
-//using Oracle.ManagedDataAccess.client;
+//using System.Data.OracleClient;
+using Oracle.ManagedDataAccess.Client;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,15 +18,15 @@ namespace Civil_War_Ireland
 
         public int viewTroops()
         {
-            
-            OracleConnection conn = new OracleConnection(DbConnect.oradb);
+
+            Oracle.ManagedDataAccess.Client.OracleConnection conn = new Oracle.ManagedDataAccess.Client.OracleConnection(DbConnect.oradb);
 
             String strSQL = "SELECT * FROM V_PlayerTroops";
 
             conn.Open();
-            
-            OracleCommand cmd = new OracleCommand(strSQL, conn);
-            OracleDataReader dr = cmd.ExecuteReader();
+
+            Oracle.ManagedDataAccess.Client.OracleCommand cmd = new Oracle.ManagedDataAccess.Client.OracleCommand(strSQL, conn);
+            Oracle.ManagedDataAccess.Client.OracleDataReader dr = cmd.ExecuteReader();
 
             //read the record in dr
             dr.Read();
